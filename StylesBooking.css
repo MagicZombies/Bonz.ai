@@ -1,0 +1,9 @@
+/* Gemensamma färgvariabler  */
+
+:root {
+  --color-light-green: #d4fff3;
+}
+
+body {
+  background-color: var(--color-light-green);
+}
