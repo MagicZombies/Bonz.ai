@@ -4,11 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="StylesBooking.css" />
-    <title>Bonzbooking</title>
+    <title>Bonzbooking - Book Your Stay</title>
   </head>
   <body>
-       <section class="hero">
-        <h1 class="hero-title">Book Your Stay</h1>
-        <p class="hero-subtitle">Discover sustainable luxury powered by AI technology</p>
+    <!---------------------->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="Logo.png" alt="bonz.ai logo" />
+        </div>
+
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="Booking.html">Booking</a>
+          <a href="About.html">About</a>
+          <a href="#" class="book-button">Book your stay</a>
+        </nav>
+      </div>
+    </header>
+    <!----------------------------->
+    <main>
+      <div class="wrapper">
+        <!-- Hero-sektion med rubrik och bokningsfiltrering  -->
+        <section class="hero">
+          <h1 class="hero-title">Book Your Stay</h1>
+          <p class="hero-subtitle">
+            Discover sustainable luxury powered by AI technology
+          </p>
+
+          <section class="booking-bar" aria-label="Booking options">
+            <p class="booking-option checkin">
+              <span class="label">Check-in</span>
+              <span class="value">📅 Pick a date</span>
+            </p>
+
+            <p class="booking-option checkout">
+              <span class="label">Check-out</span>
+              <span class="value">📅 Pick a date</span>
+            </p>
+
+            <p class="booking-option guests">
+              <span class="label">Guests</span>
+              <span class="value">2 Guests</span>
+            </p>
+
+            <p class="booking-option roomtype">
+              <span class="label">Room Type</span>
+              <span class="value">All Rooms</span>
+            </p>
+
+            <button class="booking-button">Book now</button>
+          </section>
+        </section>
+        <section class="rooms-header">
+          <h2>6 Rooms Available</h2>
+          <p>Select dates to see availability</p>
+        </section>
+      </div>
+    </main>
   </body>
 </html>
