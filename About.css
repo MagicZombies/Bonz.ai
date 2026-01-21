@@ -76,19 +76,66 @@ header {
 }
 
 /* ------------------------------ */
-/* MOBILVERSION                  */
+/* HAMBURGER IKON (dold på desktop) */
 /* ------------------------------ */
 
-@media (max-width: 576px) {
+.hamburger {
+  display: none;          
+  flex-direction: column; 
+  gap: 0.4rem;            
+  cursor: pointer;        
+}
 
-  .container {
-    justify-content: center; 
-    gap: 1.5rem;
+  .book-button {
+  background-color: var(--color-btn-primary);
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow-soft);
+  transition: 0.2s ease;
+}
+
+.nav-links {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  .hamburger span {
+  width: 30px;            
+  height: 3px;            
+  background-color: #000; 
+  border-radius: 5px;     
+  }
+
+  @media (max-width: 576px) {
+
+  .hamburger {
+    display: flex; 
   }
 
   .nav-links {
-    gap: 1.5rem; 
-    width: 100%;
-    justify-content: center;
+    position: absolute;
+    top: 6rem;
+    left: 0;                 
+    right: 0;                
+    background-color: white;
+    width: 100%;             
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    display: none;
+    text-align: center;      
+    z-index: 999;            
+  }
+
+
+  .nav-links.show {
+    display: flex; 
   }
 }
