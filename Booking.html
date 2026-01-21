@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,22 +7,27 @@
     <title>Bonzbooking - Book Your Stay</title>
   </head>
   <body>
-    <!---------------------->
+    <!-------------------NAV--------------------->
     <header>
-      <div class="container">
+      <div class="container" id="container">
         <div class="logo">
           <img src="Logo.png" alt="bonz.ai logo" />
         </div>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-        <nav class="nav-links">
+        <nav class="nav-links" id="nav-menu">
           <a href="index.html">Home</a>
           <a href="Booking.html">Booking</a>
           <a href="About.html">About</a>
-          <a href="#" class="book-button">Book your stay</a>
+          <a href="Booking.html" class="book-button">Book your stay</a>
         </nav>
       </div>
     </header>
-    <!----------------------------->
+    <!--------------------NAV--------------------->
     <main>
       <div class="wrapper">
         <!-- Hero-sektion med rubrik och bokningsfiltrering  -->
@@ -31,36 +36,51 @@
           <p class="hero-subtitle">
             Discover sustainable luxury powered by AI technology
           </p>
-
           <section class="booking-bar" aria-label="Booking options">
-            <p class="booking-option checkin">
-              <span class="label">Check-in</span>
-              <span class="value">📅 Pick a date</span>
-            </p>
+            <form class="booking-form">
+              <label class="booking-option">
+                <span class="label">Check-in</span>
+                <input type="date" name="checkin" />
+              </label>
 
-            <p class="booking-option checkout">
-              <span class="label">Check-out</span>
-              <span class="value">📅 Pick a date</span>
-            </p>
+              <label class="booking-option">
+                <span class="label">Check-out</span>
+                <input type="date" name="checkout" />
+              </label>
 
-            <p class="booking-option guests">
-              <span class="label">Guests</span>
-              <span class="value">2 Guests</span>
-            </p>
+              <label class="booking-option">
+                <span class="label">Guests</span>
+                <select name="guests">
+                  <option selected>2 Guests</option>
+                  <option>3 Guests</option>
+                  <option>4 Guests</option>
+                </select>
+              </label>
 
-            <p class="booking-option roomtype">
-              <span class="label">Room Type</span>
-              <span class="value">All Rooms</span>
-            </p>
+              <label class="booking-option">
+                <span class="label">Room Type</span>
+                <select name="roomtype">
+                  <option selected>All Rooms</option>
+                  <option>EcoSmart Suite</option>
+                  <option>GreenTech Deluxe</option>
+                  <option>Sustainable Studio</option>
+                  <option>Natures Haven</option>
+                  <option>AI Presidential Suite</option>
+                  <option>Urban EcoLoft</option>
+                </select>
+              </label>
 
-            <button class="booking-button">Book now</button>
+              <button type="submit" class="booking-button">Book now</button>
+            </form>
           </section>
         </section>
+        <!-----------Rooms Available text------------->
         <section class="rooms-header">
           <h2>6 Rooms Available</h2>
           <p>Select dates to see availability</p>
         </section>
       </div>
     </main>
+    <script src="Booking.js"></script>
   </body>
 </html>
