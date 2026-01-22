@@ -5,9 +5,11 @@
 :root {
   --color-light-greenmintish: #d4fff3;
   --color-general-white: #ffffff;
+  --color-general-blacktext: #000000;
   --color-btn-primary: #009966;
   --shadow-soft: 0px 10px 10px 0px #00000040;
   --color-dropdown-lightgreyish: #dbdbdb;
+  --color-purple-braincolor: #9810fa;
 }
 
 /*-----------------------------------------------NAV--------------------------------------------------- */
@@ -129,9 +131,14 @@ header {
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   background-color: var(--color-light-greenmintish);
+  /* Gemensam font,storlek, text tjocklek, radavstånd */
   font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 1;
+  color: var(--color-general-blacktext);
 }
 
 .wrapper {
@@ -139,7 +146,7 @@ body {
   margin: 0 auto;
 }
 
-/*------------------Hero-sektion med rubrik och undertext------------- */
+/* Hero rubrik och undertext */
 .hero {
   display: flex;
   flex-direction: column;
@@ -227,4 +234,316 @@ body {
   font-size: 32px;
   font-weight: 400;
   margin: 0.5rem 0 2rem 0;
+}
+
+/*----------------------Produktkort för rummen--------------------------*/
+
+.rooms-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.room-card {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  background-color: var(--color-general-white);
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/*Bilder och kundbetyg*/
+
+.room-image {
+  position: relative;
+  aspect-ratio: 4 / 3.5;
+  overflow: hidden;
+  margin: 0;
+}
+
+.room-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.rating-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-general-white);
+  padding: 0.5rem 0.5rem;
+  border-radius: 999px;
+  font-size: 20px;
+}
+
+/*Innehåll i produktkorten*/
+
+.room-content {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+
+/*Rubrik och pris, rumspec*/
+
+.room-header {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.price-period {
+  font-size: 20px;
+}
+
+.room-title {
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.room-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 2rem;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.price-amount {
+  font-size: 32px;
+  color: var(--color-btn-primary);
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+
+.room-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.room-specs {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.room-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.room-specs li {
+  display: flex;
+  align-items: center;
+}
+
+.room-specs svg {
+  margin-bottom: 0.5rem;
+}
+
+/* ---------------Lucide ikoner------------------------ */
+
+.icon-leaf {
+  width: 20px;
+  height: 20px;
+  color: var(--color-btn-primary);
+}
+
+.icon-brain {
+  width: 20px;
+  height: 20px;
+  color: var(--color-purple-braincolor);
+}
+
+.icon-wifi {
+  width: 20px;
+  height: 20px;
+  color: var(--color-general-blacktext);
+}
+
+.icon-users {
+  width: 20px;
+  height: 20px;
+  color: var(--color-general-blacktext);
+  flex-shrink: 0;
+}
+
+.icon-star {
+  width: 20px;
+  height: 20px;
+  color: #ffcc00;
+}
+
+/* --------------------------------------------------- */
+
+/*Features, AI Features samt Sustainability*/
+
+.features,
+.ai-features,
+.sustainability {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.features-label,
+.ai-features-label,
+.sustainability-label {
+  font-size: 20px;
+  margin: 0.5rem;
+  font-weight: 400;
+}
+
+.features-tags,
+.ai-features-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.25rem;
+  margin-left: 0.5rem;
+  padding: 0;
+  gap: 1rem;
+}
+
+.feature-tag,
+.ai-feature-tag {
+  background-color: var(--color-dropdown-lightgreyish);
+  color: black;
+  padding: 0.4rem 0.75rem;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.ai-feature-tag {
+  color: var(--color-purple-braincolor);
+}
+
+.sustainability-text {
+  font-size: 16px;
+  margin: 0.5rem;
+}
+
+/*Reservera rum knapp*/
+
+.reserve-button {
+  margin-top: auto;
+  margin: 1rem 1rem;
+  background-color: var(--color-btn-primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/*--------------------------Responsivitet 1250px-------------------------*/
+
+@media (max-width: 1250px) {
+  .rooms-header {
+    margin: 1rem;
+  }
+
+  .hero-title {
+    font-size: 64px;
+  }
+
+  .hero-subtitle {
+    font-size: 28px;
+  }
+
+  .booking-bar {
+    padding: 1.5rem;
+    margin: 2rem 1rem;
+  }
+
+  .booking-form {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+
+  .booking-button {
+    grid-column: span 2;
+    margin-top: 0.5rem;
+    justify-self: center;
+    padding: 1rem 6rem;
+    font-size: 22px;
+  }
+
+  .booking-option .label {
+    font-size: 18px;
+  }
+
+  .room-card {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+  }
+
+  .room-image {
+    aspect-ratio: 4 / 3.5;
+  }
+}
+
+/*-------------------------Responsivitet 580px--------------------------*/
+
+@media (max-width: 580px) {
+  .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .booking-bar {
+    padding: 1rem;
+    border-radius: 16px;
+    margin: 1.5rem 1rem;
+  }
+
+  .booking-form {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .booking-option {
+    padding: 0;
+  }
+
+  .booking-option .label {
+    font-size: 14px;
+    padding: 0.25rem 0;
+  }
+
+  .booking-form input,
+  .booking-form select {
+    padding: 0.75rem;
+    font-size: 16px;
+  }
+
+  .booking-button {
+    width: 60%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 18px;
+    justify-self: center;
+    grid-column: auto;
+  }
 }
