@@ -1,12 +1,10 @@
 /* Gemensamma färgvariabler  */
 
 :root {
-  --color-light-green: #d4fff3;
+  --color-light-greenmintish: #d4fff3;
   --color-general-white: #ffffff;
-
   --color-btn-primary: #009966;
-
-  --shadow-soft: 0px 10px 10px 0px #00000040;
+  --color-dropdown-lightgreyish: #dbdbdb;
 }
 
 /* ------------------------------ */
