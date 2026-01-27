@@ -38,40 +38,44 @@
           </p>
           <section class="booking-bar" aria-label="Booking options">
             <form class="booking-form" id="bookingForm" novalidate>
-              <label class="booking-option">
-                <span class="label">Check-in</span>
-                <input type="date" name="checkin" required />
-              </label>
+              <fieldset>
+                <legend>Booking options</legend>
 
-              <label class="booking-option">
-                <span class="label">Check-out</span>
-                <input type="date" name="checkout" required />
-              </label>
+                <label class="booking-option">
+                  <span class="label">Check-in</span>
+                  <input type="date" name="checkin" required />
+                </label>
 
-              <label class="booking-option">
-                <span class="label">Guests</span>
-                <select name="guests" required>
-                  <option value="">Select guests</option>
-                  <option>2 Guests</option>
-                  <option>3 Guests</option>
-                  <option>4 Guests</option>
-                </select>
-              </label>
+                <label class="booking-option">
+                  <span class="label">Check-out</span>
+                  <input type="date" name="checkout" required />
+                </label>
 
-              <label class="booking-option">
-                <span class="label">Room Type</span>
-                <select name="roomtype" required>
-                  <option value="">Select room</option>
-                  <option>EcoSmart Suite</option>
-                  <option>GreenTech Deluxe</option>
-                  <option>Sustainable Studio</option>
-                  <option>Natures Haven</option>
-                  <option>AI Presidential Suite</option>
-                  <option>Urban EcoLoft</option>
-                </select>
-              </label>
+                <label class="booking-option">
+                  <span class="label">Guests</span>
+                  <select name="guests" required>
+                    <option value="">Select guests</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                  </select>
+                </label>
 
-              <button type="submit" class="booking-button">Book now</button>
+                <label class="booking-option">
+                  <span class="label">Room Type</span>
+                  <select name="roomtype" required>
+                    <option value="">Select room</option>
+                    <option>EcoSmart Suite</option>
+                    <option>GreenTech Deluxe</option>
+                    <option>Sustainable Studio</option>
+                    <option>Natures Haven</option>
+                    <option>AI Presidential Suite</option>
+                    <option>Urban EcoLoft</option>
+                  </select>
+                </label>
+
+                <button type="submit" class="booking-button">Book now</button>
+              </fieldset>
             </form>
           </section>
         </section>
@@ -82,7 +86,7 @@
             <p>Select dates to see availability</p>
           </section>
 
-          <!-- Produktkort för rummen  -->
+          <!-------------------- Produktkort för rummen -------------------->
           <section class="rooms-container">
             <!-- Rum 1: EcoSmart Suite -->
             <article class="room-card">
@@ -112,12 +116,11 @@
                   4.9
                 </data>
               </figure>
-
               <section class="room-content">
                 <header class="room-header">
-                  <div class="room-main">
-                    <!-- EcoSmart Suite samt rums spec -->
-                    <div class="room-info">
+                  <section class="room-main">
+                    <!--------Titel. Lucideikon 2människor och kvadrattext-------->
+                    <section class="room-info">
                       <h3 class="room-title">EcoSmart Suite</h3>
                       <ul class="room-specs">
                         <li>
@@ -143,16 +146,14 @@
                         </li>
                         <li>45 m²</li>
                       </ul>
-                    </div>
+                    </section>
                     <!-- Pris och period -->
-                    <div class="room-price">
+                    <section class="room-price">
                       <strong class="price-amount">$299</strong>
                       <small class="price-period">per night</small>
-                    </div>
-                  </div>
+                    </section>
+                  </section>
                 </header>
-                <!--------- Lucideikon 2människor och kvadrattext-------->
-
                 <!--------- Lucideikon Wifi och Features text-------->
                 <section class="features">
                   <h4 class="features-label">
@@ -248,6 +249,833 @@
                     100% renewable energy, recycled materials
                   </p>
                 </section>
+                <button class="reserve-button">Reserve Room</button>
+              </section>
+            </article>
+            <article class="room-card room-card--reverse">
+              <!--------------------- GreenTech Deluxe-------------------->
+              <figure class="room-image">
+                <img
+                  src="Roompictures/02-day.jpg"
+                  alt="GreenTech Deluxe room with modern interior and large windows"
+                />
+                <data class="rating-badge" value="4.7">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  4.7
+                </data>
+              </figure>
+
+              <!--------Titel,Lucideikon 2människor och kvadrattext-------->
+              <section class="room-content">
+                <header class="room-header">
+                  <section class="room-main">
+                    <section class="room-info">
+                      <h3 class="room-title">GreenTech Deluxe</h3>
+                      <ul class="room-specs">
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon-users"
+                          >
+                            <path d="M18 21a8 8 0 0 0-16 0" />
+                            <circle cx="10" cy="8" r="5" />
+                            <path
+                              d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"
+                            />
+                          </svg>
+                          Up to 2
+                        </li>
+                        <li>35 m²</li>
+                      </ul>
+                    </section>
+                    <!----- Pris och period----->
+                    <section class="room-price">
+                      <strong class="price-amount">$199</strong>
+                      <small class="price-period">per night</small>
+                    </section>
+                  </section>
+                </header>
+                <!--------Lucideikon wifi och Features --------->
+                <section class="features">
+                  <h4 class="features-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-wifi"
+                    >
+                      <path d="M12 20h.01" />
+                      <path d="M2 8.82a15 15 0 0 1 20 0" />
+                      <path d="M5 12.859a10 10 0 0 1 14 0" />
+                      <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+                    </svg>
+                    Features
+                  </h4>
+                  <ul class="features-tags">
+                    <li class="feature-tag">Queen size bed</li>
+                    <li class="feature-tag">City View</li>
+                    <li class="feature-tag">Smart TV</li>
+                    <li class="feature-tag">Premium Toiletries</li>
+                  </ul>
+                </section>
+
+                <!--------Lucideikon hjärna och Aifeatures text--------->
+                <section class="ai-features">
+                  <h4 class="ai-features-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-brain"
+                    >
+                      <path d="M12 18V5" />
+                      <path
+                        d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"
+                      />
+                      <path
+                        d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"
+                      />
+                      <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+                      <path d="M18 18a4 4 0 0 0 2-7.464" />
+                      <path
+                        d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+                      />
+                      <path d="M6 18a4 4 0 0 1-2-7.464" />
+                      <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
+                    </svg>
+                    AI Features
+                  </h4>
+                  <ul class="ai-features-tags">
+                    <li class="ai-feature-tag">Voice Control</li>
+                    <li class="ai-feature-tag">Smart Lighting</li>
+                    <li class="ai-feature-tag">Predictive Climate</li>
+                  </ul>
+                </section>
+
+                <!---------Lucideikon löv och Sustainability --------->
+                <section class="sustainability">
+                  <h4 class="sustainability-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-leaf"
+                    >
+                      <path
+                        d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                      />
+                      <path
+                        d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                      />
+                    </svg>
+                    Sustainability
+                  </h4>
+                  <p class="sustainability-text">
+                    Solar powered, low-flow water systems
+                  </p>
+                </section>
+
+                <button class="reserve-button">Reserve Room</button>
+              </section>
+            </article>
+            <!-------------------Sustainable Studio-------------------------->
+            <article class="room-card">
+              <figure class="room-image">
+                <img
+                  src="Roompictures/04-day.jpg"
+                  alt="Sustainable Studio with double bed and wooden interior"
+                />
+                <data class="rating-badge" value="4.2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a.53.53 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  4.2
+                </data>
+              </figure>
+
+              <section class="room-content">
+                <header class="room-header">
+                  <section class="room-main">
+                    <!--------Titel, Lucideikon 2människor och kvadrattext-------->
+                    <section class="room-info">
+                      <h3 class="room-title">Sustainable Studio</h3>
+                      <ul class="room-specs">
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon-users"
+                          >
+                            <path d="M18 21a8 8 0 0 0-16 0" />
+                            <circle cx="10" cy="8" r="5" />
+                            <path
+                              d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"
+                            />
+                          </svg>
+                          Up to 2
+                        </li>
+                        <li>25 m²</li>
+                      </ul>
+                    </section>
+                    <!----- Pris och period----->
+                    <section class="room-price">
+                      <strong class="price-amount">$149</strong>
+                      <small class="price-period">per night</small>
+                    </section>
+                  </section>
+                </header>
+                <!--------- Lucideikon Wifi och Features text-------->
+                <section class="features">
+                  <h4 class="features-label">
+                    <svg
+                      class="icon-wifi"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M12 20h.01" />
+                      <path d="M2 8.82a15 15 0 0 1 20 0" />
+                      <path d="M5 12.859a10 10 0 0 1 14 0" />
+                      <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+                    </svg>
+                    Features
+                  </h4>
+                  <ul class="features-tags">
+                    <li class="feature-tag">Double Bed</li>
+                    <li class="feature-tag">Garden View</li>
+                    <li class="feature-tag">Eco-Friendly Bath</li>
+                  </ul>
+                </section>
+                <!--------- Lucideikon hjärna och Aifeatures text-------->
+                <section class="ai-features">
+                  <h4 class="ai-features-label">
+                    <svg
+                      class="icon-brain"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M12 18V5" />
+                      <path
+                        d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"
+                      />
+                      <path
+                        d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"
+                      />
+                      <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+                      <path d="M18 18a4 4 0 0 0 2-7.464" />
+                      <path
+                        d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+                      />
+                      <path d="M6 18a4 4 0 0 1-2-7.464" />
+                      <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
+                    </svg>
+                    AI Features
+                  </h4>
+                  <ul class="ai-features-tags">
+                    <li class="ai-feature-tag">Smart Lighting</li>
+                    <li class="ai-feature-tag">Digital Concierge</li>
+                  </ul>
+                </section>
+                <!--------- Lucideikon löv och systaintext-------->
+                <section class="sustainability">
+                  <h4 class="sustainability-label">
+                    <svg
+                      class="icon-leaf"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                      />
+                      <path
+                        d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                      />
+                    </svg>
+                    Sustainability
+                  </h4>
+                  <p class="sustainability-text">
+                    Bamboo furniture, organic linens
+                  </p>
+                </section>
+
+                <button class="reserve-button">Reserve Room</button>
+              </section>
+            </article>
+            <!------------------Natures Haven--------------------------------->
+            <article class="room-card room-card--reverse">
+              <!---------Rumsbild och Lucideikon stjärna-------->
+              <figure class="room-image">
+                <img src="Roompictures/05-day.jpg" alt="Sofa and water view" />
+                <data class="rating-badge" value="4.6">
+                  <svg
+                    class="icon-star"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a.53.53 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  4.6
+                </data>
+              </figure>
+
+              <section class="room-content">
+                <header class="room-header">
+                  <section class="room-main">
+                    <!--------Titel. Lucideikon 2människor och kvadrattext-------->
+                    <section class="room-info">
+                      <h3 class="room-title">Nature's Haven</h3>
+                      <ul class="room-specs">
+                        <li>
+                          <svg
+                            class="icon-users"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <path d="M18 21a8 8 0 0 0-16 0" />
+                            <circle cx="10" cy="8" r="5" />
+                            <path
+                              d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"
+                            />
+                          </svg>
+                          Up to 3
+                        </li>
+                        <li>40 m²</li>
+                      </ul>
+                    </section>
+                    <!----- Pris och period----->
+                    <section class="room-price">
+                      <strong class="price-amount">$229</strong>
+                      <small class="price-period">per night</small>
+                    </section>
+                  </section>
+                </header>
+                <!--------- Lucideikon Wifi och Features text-------->
+                <section class="features">
+                  <h4 class="features-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-wifi"
+                    >
+                      <path d="M12 20h.01" />
+                      <path d="M2 8.82a15 15 0 0 1 20 0" />
+                      <path d="M5 12.859a10 10 0 0 1 14 0" />
+                      <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+                    </svg>
+                    Features
+                  </h4>
+                  <ul class="features-tags">
+                    <li class="feature-tag">King size bed</li>
+                    <li class="feature-tag">Forest View</li>
+                    <li class="feature-tag">Balcony</li>
+                    <li class="feature-tag">Air Purifier</li>
+                  </ul>
+                </section>
+
+                <!--------- Lucideikon hjärna och Aifeatures text-------->
+                <section class="ai-features">
+                  <h4 class="ai-features-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-brain"
+                    >
+                      <path d="M12 18V5" />
+                      <path
+                        d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"
+                      />
+                      <path
+                        d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"
+                      />
+                      <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+                      <path d="M18 18a4 4 0 0 0 2-7.464" />
+                      <path
+                        d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+                      />
+                      <path d="M6 18a4 4 0 0 1-2-7.464" />
+                      <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
+                    </svg>
+                    AI Features
+                  </h4>
+                  <ul class="ai-features-tags">
+                    <li class="ai-feature-tag">Voice Control</li>
+                    <li class="ai-feature-tag">Smart Lighting</li>
+                    <li class="ai-feature-tag">Wellness Monitoring</li>
+                  </ul>
+                </section>
+                <!--------- Lucideikon löv och systaintext-------->
+                <section class="sustainability">
+                  <h4 class="sustainability-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-leaf"
+                    >
+                      <path
+                        d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                      />
+                      <path
+                        d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                      />
+                    </svg>
+                    Sustainability
+                  </h4>
+                  <p class="sustainability-text">
+                    Living plant walls, carbon-negative
+                  </p>
+                </section>
+
+                <button class="reserve-button">Reserve Room</button>
+              </section>
+            </article>
+            <!-----------------AI Presidential suite--------------------------->
+            <article class="room-card">
+              <!---------Rumsbild och Lucideikon stjärna-------->
+              <figure class="room-image">
+                <img
+                  src="Roompictures/07-day.jpg"
+                  alt="sofa, window, black and white carpets"
+                />
+                <data class="rating-badge" value="5.0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  5.0
+                </data>
+              </figure>
+
+              <section class="room-content">
+                <header class="room-header">
+                  <section class="room-main">
+                    <!--------Titel. Lucideikon 2människor och kvadrattext-------->
+                    <section class="room-info">
+                      <h3 class="room-title">AI Presidential Suite</h3>
+                      <ul class="room-specs">
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon-users"
+                          >
+                            <path d="M18 21a8 8 0 0 0-16 0" />
+                            <circle cx="10" cy="8" r="5" />
+                            <path
+                              d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"
+                            />
+                          </svg>
+                          Up to 4
+                        </li>
+                        <li>80 m²</li>
+                      </ul>
+                    </section>
+                    <!------ Pris och period ------->
+                    <section class="room-price">
+                      <strong class="price-amount">$499</strong>
+                      <small class="price-period">per night</small>
+                    </section>
+                  </section>
+                </header>
+                <!--------- Lucideikon Wifi och Features text-------->
+                <section class="features">
+                  <h4 class="features-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-wifi"
+                    >
+                      <path d="M12 20h.01" />
+                      <path d="M2 8.82a15 15 0 0 1 20 0" />
+                      <path d="M5 12.859a10 10 0 0 1 14 0" />
+                      <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+                    </svg>
+                    Features
+                  </h4>
+                  <ul class="features-tags">
+                    <li class="feature-tag">2 King size beds</li>
+                    <li class="feature-tag">Panoramic View</li>
+                    <li class="feature-tag">Private Terrace</li>
+                    <li class="feature-tag">Luxury Bath</li>
+                  </ul>
+                </section>
+                <!--------- Lucideikon hjärna och Aifeatures text-------->
+                <section class="ai-features">
+                  <h4 class="ai-features-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-brain"
+                    >
+                      <path d="M12 18V5" />
+                      <path
+                        d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"
+                      />
+                      <path
+                        d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"
+                      />
+                      <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+                      <path d="M18 18a4 4 0 0 0 2-7.464" />
+                      <path
+                        d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+                      />
+                      <path d="M6 18a4 4 0 0 1-2-7.464" />
+                      <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
+                    </svg>
+                    AI Features
+                  </h4>
+                  <ul class="ai-features-tags">
+                    <li class="ai-feature-tag">Full AI Suite</li>
+                    <li class="ai-feature-tag">Predictive Service</li>
+                    <li class="ai-feature-tag">Holographic Display</li>
+                  </ul>
+                </section>
+                <!--------- Lucideikon löv och systaintext-------->
+                <section class="sustainability">
+                  <h4 class="sustainability-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-leaf"
+                    >
+                      <path
+                        d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                      />
+                      <path
+                        d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                      />
+                    </svg>
+                    Sustainability
+                  </h4>
+                  <p class="sustainability-text">
+                    Net-zero carbon, rainwater harvesting
+                  </p>
+                </section>
+                <button class="reserve-button">Reserve Room</button>
+              </section>
+            </article>
+            <!------------------Uraban EcoLoft---------------------->
+            <article class="room-card room-card--reverse">
+              <!---------Rumsbild och Lucideikon stjärna-------->
+              <figure class="room-image">
+                <img
+                  src="Roompictures/09-day.jpg"
+                  alt="outdoor place whith chairs and water view"
+                />
+                <data class="rating-badge" value="4.8">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="icon-star"
+                  >
+                    <path
+                      d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
+                    />
+                  </svg>
+                  4.8
+                </data>
+              </figure>
+
+              <section class="room-content">
+                <header class="room-header">
+                  <section class="room-main">
+                    <!--------Titel. Lucideikon 2människor och kvadrattext-------->
+                    <section class="room-info">
+                      <h3 class="room-title">Urban EcoLoft</h3>
+                      <ul class="room-specs">
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="icon-users"
+                          >
+                            <path d="M18 21a8 8 0 0 0-16 0" />
+                            <circle cx="10" cy="8" r="5" />
+                            <path
+                              d="M22 20c0-3.37-2-6.5-4-8a5 5 0 0 0-.45-8.3"
+                            />
+                          </svg>
+                          Up to 2
+                        </li>
+                        <li>30 m²</li>
+                      </ul>
+                    </section>
+
+                    <!----- Pris och period----->
+                    <section class="room-price">
+                      <strong class="price-amount">$179</strong>
+                      <small class="price-period">per night</small>
+                    </section>
+                  </section>
+                </header>
+
+                <!--------- Lucideikon Wifi och Features text-------->
+                <section class="features">
+                  <h4 class="features-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-wifi"
+                    >
+                      <path d="M12 20h.01" />
+                      <path d="M2 8.82a15 15 0 0 1 20 0" />
+                      <path d="M5 12.859a10 10 0 0 1 14 0" />
+                      <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+                    </svg>
+                    Features
+                  </h4>
+                  <ul class="features-tags">
+                    <li class="feature-tag">Queen size bed</li>
+                    <li class="feature-tag">High Ceiling</li>
+                    <li class="feature-tag">Natural Light</li>
+                  </ul>
+                </section>
+
+                <!--------- Lucideikon hjärna och Aifeatures text-------->
+                <section class="ai-features">
+                  <h4 class="ai-features-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-brain"
+                    >
+                      <path d="M12 18V5" />
+                      <path
+                        d="M15 13a4.17 4.17 0 0 1-3-4 4.17 4.17 0 0 1-3 4"
+                      />
+                      <path
+                        d="M17.598 6.5A3 3 0 1 0 12 5a3 3 0 1 0-5.598 1.5"
+                      />
+                      <path d="M17.997 5.125a4 4 0 0 1 2.526 5.77" />
+                      <path d="M18 18a4 4 0 0 0 2-7.464" />
+                      <path
+                        d="M19.967 17.483A4 4 0 1 1 12 18a4 4 0 1 1-7.967-.517"
+                      />
+                      <path d="M6 18a4 4 0 0 1-2-7.464" />
+                      <path d="M6.003 5.125a4 4 0 0 0-2.526 5.77" />
+                    </svg>
+                    AI Features
+                  </h4>
+                  <ul class="ai-features-tags">
+                    <li class="ai-feature-tag">Smart Lighting</li>
+                    <li class="ai-feature-tag">Digital Concierge</li>
+                  </ul>
+                </section>
+
+                <!--------- Lucideikon löv och systaintext-------->
+                <section class="sustainability">
+                  <h4 class="sustainability-label">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="icon-leaf"
+                    >
+                      <path
+                        d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                      />
+                      <path
+                        d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                      />
+                    </svg>
+                    Sustainability
+                  </h4>
+                  <p class="sustainability-text">
+                    Upcycled furniture, zero waste
+                  </p>
+                </section>
+
                 <button class="reserve-button">Reserve Room</button>
               </section>
             </article>

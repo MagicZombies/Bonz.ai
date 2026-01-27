@@ -146,7 +146,7 @@ body {
   margin: 0 auto;
 }
 
-/* Hero rubrik och undertext */
+/* ---------------------Hero rubrik och undertext---------------------- */
 .hero {
   display: flex;
   flex-direction: column;
@@ -175,10 +175,27 @@ body {
   box-shadow: 0px 10px 10px 0px #00000040;
 }
 
-.booking-form {
+.booking-form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr) 1.5fr;
   align-items: start;
+}
+
+.booking-form legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .booking-form input,
@@ -195,6 +212,12 @@ body {
 
 .booking-form select {
   background-color: var(--color-dropdown-lightgreyish);
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
 }
 
 .booking-option {
@@ -221,6 +244,7 @@ body {
   cursor: pointer;
   background-color: var(--color-btn-primary);
   color: white;
+  font-family: "Inter", sans-serif;
 }
 
 /*-----------------------Rooms Available texter-----------------------*/
@@ -240,7 +264,7 @@ body {
 
 .rooms-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2.5rem;
   margin-bottom: 4rem;
 }
@@ -254,7 +278,21 @@ body {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/*Bilder och kundbetyg*/
+/* ---------------- Spegelvänt rumskort (bild till höger i desktop) ------------ */
+
+.room-card--reverse {
+  grid-template-columns: 1.25fr 1fr;
+}
+
+.room-card--reverse .room-image {
+  order: 2;
+}
+
+.room-card--reverse .room-content {
+  order: 1;
+}
+
+/*-----------------------Bildcontainer med overlay kundbetyg --------------*/
 
 .room-image {
   position: relative;
@@ -280,7 +318,7 @@ body {
   font-size: 20px;
 }
 
-/*Innehåll i produktkorten*/
+/*-------------------------Innehåll i produktkorten-------------------*/
 
 .room-content {
   padding: 0 1rem;
@@ -288,8 +326,6 @@ body {
   flex-direction: column;
   align-self: start;
 }
-
-/*Rubrik och pris, rumspec*/
 
 .room-header {
   display: flex;
@@ -354,44 +390,37 @@ body {
 
 .room-specs svg {
   margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
 }
 
-/* ---------------Lucide ikoner------------------------ */
+/* Lucide ikoner */
 
-.icon-leaf {
+.icon {
   width: 20px;
   height: 20px;
+}
+
+.icon-leaf {
   color: var(--color-btn-primary);
 }
 
 .icon-brain {
-  width: 20px;
-  height: 20px;
   color: var(--color-purple-braincolor);
 }
 
 .icon-wifi {
-  width: 20px;
-  height: 20px;
   color: var(--color-general-blacktext);
 }
 
 .icon-users {
-  width: 20px;
-  height: 20px;
   color: var(--color-general-blacktext);
-  flex-shrink: 0;
 }
 
 .icon-star {
-  width: 20px;
-  height: 20px;
   color: #ffcc00;
 }
 
-/* --------------------------------------------------- */
-
-/*Features, AI Features samt Sustainability*/
+/* Features, AI Features samt Sustainability */
 
 .features,
 .ai-features,
@@ -426,7 +455,7 @@ body {
   color: black;
   padding: 0.4rem 0.75rem;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .ai-feature-tag {
@@ -434,7 +463,7 @@ body {
 }
 
 .sustainability-text {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0.5rem;
 }
 
@@ -451,6 +480,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   cursor: pointer;
+  font-family: "Inter", sans-serif;
 }
 
 /*--------------------------Responsivitet 1250px-------------------------*/
@@ -473,7 +503,7 @@ body {
     margin: 2rem 1rem;
   }
 
-  .booking-form {
+  .booking-form fieldset {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1rem;
     column-gap: 1rem;
@@ -499,6 +529,12 @@ body {
   .room-image {
     aspect-ratio: 4 / 3.5;
   }
+  /*--Återställa så bilder kommer överst vid mindre skärm--*/
+
+  .room-card--reverse .room-image,
+  .room-card--reverse .room-content {
+    order: unset;
+  }
 }
 
 /*-------------------------Responsivitet 580px--------------------------*/
@@ -518,7 +554,7 @@ body {
     margin: 1.5rem 1rem;
   }
 
-  .booking-form {
+  .booking-form fieldset {
     grid-template-columns: 1fr;
     gap: 0.75rem;
   }
@@ -542,8 +578,91 @@ body {
     width: 60%;
     margin-top: 0.5rem;
     padding: 1rem;
-    font-size: 18px;
+    font-size: 22px;
     justify-self: center;
     grid-column: auto;
   }
+}
+
+/*-------------------------Effekter-------------------------*/
+
+.booking-bar {
+  position: relative;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.booking-bar:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
+}
+
+.booking-button {
+  position: relative;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.booking-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 153, 102, 0.45);
+}
+
+.booking-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 153, 102, 0.35);
+}
+
+/*----------------------------------------*/
+
+.room-card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.room-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.2);
+}
+
+.room-image img {
+  transition: transform 0.4s ease;
+}
+
+.room-card:hover .room-image img {
+  transform: scale(1.04);
+}
+
+.reserve-button {
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.reserve-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.reserve-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*---------------------*/
+
+.rating-badge {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.room-card:hover .rating-badge {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
