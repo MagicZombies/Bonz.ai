@@ -2,10 +2,9 @@
 
 Detta är README.
 
-
 <<<<<<< Updated upstream
 hej niklas
 
-hej hej hej hej
-=======
->>>>>>> Stashed changes
+# hej hej hej hej
+
+> > > > > > > Stashed changes
