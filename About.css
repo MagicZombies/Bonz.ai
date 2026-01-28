@@ -44,9 +44,10 @@ header {
 }
 
 .logo img {
-  height: 3rem;
-  width: auto;
-  display: block;
+  width: 322px;
+  height: 78px;
+  top: 37px;
+  left: 100px;
 }
 
 .nav-links {
@@ -60,8 +61,9 @@ header {
 .nav-links a {
   text-decoration: none;
   color: #000;
-  font-weight: 500;
+  font-weight: 600;
   white-space: nowrap;
+  font-size: 20px;
 }
 
 .book-button {
@@ -74,6 +76,11 @@ header {
   box-shadow: var(--shadow-soft);
   transition: 0.2s ease;
 }
+
+.nav-links .book-button {
+  color: white;
+}
+
 
 .hamburger {
   display: none;
