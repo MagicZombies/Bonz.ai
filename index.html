@@ -7,188 +7,184 @@
     <title>Bonz.Ai</title>
 </head>
 <body>
-     <header>
-        <div class="container">
-            <div class="logo">
-               <img src="Logo.png" alt="bonz.ai logo">
+    <header>
+    <div class="container">
+        <div class="logo"><img src="Logo.png" alt="logo"></div>
+        <div class="hamburger" id="hamburger">
+                <span></span> 
+                <span></span> 
+                <span></span>
             </div>
             
-            <nav class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="Booking.html">Booking</a>
-                <a href="About.html">About</a>
-                <a href="#" class="book-button">Book your stay</a>
-            </nav>
-        </div>
-    </header>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Booking.html">Booking</a>
+            <a href="About.html">About</a>
+            <a href="Booking.html" class="book-button">Book your stay</a>
+        </nav>
+    </div>
+</header>
     
  
     <section class="hero">
         <div class= "hero-content">
-        <h1> Welcome to the Future of Hospitality </h1>
-        <p> Where AI innovation meets sustainable luxury. Experience Bonz.ai.</p>
-        <div class="hero-buttons">
-        <a href="#" class="btn-primary">Book your stay</a>
-        <a href="#" class="btn-secondary">Learn More</a>
-        </div>
-      </div>
-    </section>
-
-
-    <div class="container">
-    <div class="Booking-bar">
-        <div class="input-group">
-            <label>Check In</label>
-            <input type="text" placeholder="select date">
-        </div>
-        <div class="input-group">
-            <label>Check out</label>
-            <input type="text" placeholder="select date">
-        </div>
-        <div class="input-group">
-            <label>Guests</label>
-            <input type="text" placeholder="2 Guests">
-        </div>
-        <button class="btn-search">Check Availability</button>
-    </div>
-    </div>
-   
-    <section class="vision container">
-        <div class="section-title">
-            <h2>Our Vision </h2>
-             <p>Bonz.ai reimagines the hotel experience by harmonizing cutting-edge artificial intelligence with unwavering environmental stewardship. We believe the future of travel is both smart and sustainable.</p>
-        </div>
-        
-        
-        <div class="card-grid">
-            <div class="card">
-                <div class="icon">
-                    <img src="card.icon/brain.svg" alt="brain icon">
-                </div>
-                <h3>AI-Powered Experience</h3>
-                <p>Personalized room settings, smart recommendations, and seamless service through advanced AI technology.</p>
-            </div>
-        </div>
-        
-        <div class="card-grid">
-            <div class="card">
-                <div class="icon">
-                    <img src="card.icon/leaf.svg" alt="leaf icon">
-                </div>
-                <h3>100% Sustainable</h3>
-                <p>Carbon-neutral operations, renewable energy, and eco-friendly materials throughout the property.</p>
-            </div>
-        </div>
-        
-        <div class="card-grid">
-            <div class="card">
-                <div class="icon">
-                    <img src="card.icon/sparkles.svg" alt="sparkles icon">
-                </div>
-                <h3>Luxury Redefined</h3>
-                <p>Premium comfort meets environmental responsibility without compromise on quality or experience.</p>
-                
-            </div>
-        </div>
-        
-        <div class="card-grid">
-            <div class="card">
-                <div class="icon">
-                    <img src="card.icon/zap.svg" alt="zap icon">
-                </div>
-                <h3>Smart Everything</h3>
-                <p>Voice-controlled rooms, automated climate control, and intelligent lighting that adapts to you.</p>
+            <h1> Welcome to the Future of Hospitality </h1>
+            <p> Where AI innovation meets sustainable luxury. Experience Bonz.ai.</p>
+            <div class="hero-buttons">
+                <a href="Booking.html" class="btn-primary">Book your stay</a>
+                <a href="About.html" class="btn-secondary">Learn More</a>
             </div>
         </div>
     </section>
     
-</section>         
+    <section class="booking-section">
+    <div class="container">
+        <div class="Booking-bar">
+            <div class="input-wrapper">
+                <img src="bokning.icon/calendar-days.png" class="input-icon">
+                <input type="date"  id="Check In">
+            </div>
+            <div class="input-wrapper">
+                <img src="bokning.icon/calendar-days.png" class="input-icon">
+                <input type="date" id="Check Out">
+            </div>
+            <div class="input-wrapper">
+                <img src="bokning.icon/users-round.png" class="input-icon">
+                <input type="number" placeholder="2 Guests" min="1">
+            </div>
+            <button class="btn-search">Check Availability</button>
+        </div>
+    </div>
+</section>
+    
+    <section class="vision container">
+        <div class="section-title">
+            <h2>Our Vision </h2>
+            <p>Bonz.ai reimagines the hotel experience by harmonizing cutting-edge artificial intelligence with unwavering environmental stewardship. We believe the future of travel is both smart and sustainable.</p>
+        </div>    
+
+        <div class="card-grid">
+            <div class="card">
+                <div class="icon"><img src="card.icon/brain.svg" alt="brain icon"></div>
+                <h3>AI-Powered Experience</h3>
+                <p>Personalized room settings, smart recommendations, and seamless service through advanced AI technology.</p>
+            </div>
+        
+            
+                <div class="card">
+                    <div class="icon"><img src="card.icon/leaf.svg" alt="leaf icon"></div>
+                    <h3>100% Sustainable</h3>
+                    <p>Carbon-neutral operations, renewable energy, and eco-friendly materials throughout the property.</p>
+                </div>
+        
+       
+        
+       
+            <div class="card">
+                <div class="icon"><img src="card.icon/sparkles.svg" alt="sparkles icon"></div>
+                <h3>Luxury Redefined</h3>
+                <p>Premium comfort meets environmental responsibility without compromise on quality or experience.</p>
+            </div>
+                
+        
+            
+                <div class="card">
+                    <div class="icon"><img src="card.icon/zap.svg" alt="zap icon"></div>
+                    <h3>Smart Everything</h3>
+                    <p>Voice-controlled rooms, automated climate control, and intelligent lighting that adapts to you.</p>
+                </div>
+            </div>
+        </section>
+        
+    
+         
     
   <section class="stats section">
     <div class="container">
         <div class="section-title">
-     <h2>Sustainablility by the Numbers</h2>
-     <p>Our commitment to the planet, measured and verified</p>
-    </div>
-
-    <div class="grid grid-4">
-        <div class="stat-card">
-        <img src="stat.icon/droplet.svg" alt="">
-        <h3>50%</h3>
-        <h3>Watar consumption</h3>
-        <p>Advanced water recycling and smart usage monitoring</p>
-    </div>
-  
-    <div class="stat-card">
-        <img src="stat.icon/battery.svg" alt="battery icon">
-        <h3>100%</h3>
-        <h3>Solar Powered</h3>
-        <p>All energy sourced from renewable solar panels</p>
-    </div>
-     
-    <div class="stat-card">
-        <img src="stat.icon/wind.svg" alt="wind icon">
-        <h3>99.9%</h3>
-        <h3>Clean Air</h3>
-        <p>HEPA filtration and natural ventilation systems</p>    
-    </div>
-   
-    <div class="stat-card">
-        <img src="stat.icon/recycle.svg" alt="recycle icon">
-        <h3>95%</h3>
-        <h3>Zero Waste</h3>
-        <p>Comprehensive recycling and composting programs</p>
-    </div>  
-</section>
-
-<section class="stay container">
-
-    <div class="stay-content">
-     
-        <h2>Your AI-Enhanced Stay</h2>
-        <p>From the moment you arrive, our AI concierge learns your preferences and personalizes every aspect of your stay. Your room knows your ideal temperature, lighting, and even suggests local experiences based on your interests.</p>
-     
-        <p>Voice-activated room controls<br>Adjust everything with simple voice commands</p>
-        <p>Predictive service 24/7<BR>AI anticipates your needs before you ask</p>
-            <p>Smart recommendations<BR>Personalized dining and activity suggestions</p>
-                <a href="#" class="btn btn-primary">Experience it yourself</a>
-            </div>
-            <div class="stay-image">
-                <img src="hotel romm.jpg" alt="Hotel room">
-            </div>
-        </section>
-
-        <section class="final-cta">
-            <div class="final-cta-content">
-                <h2>Ready to Transform your stay?</h2>
-                <p>Join us in creating a sustainable future without sacrificing luxury or comfort. Your perfect stay awaits.</p>
-                <a href="#" class="btn btn-primary">Book Now</a>
-            </div>
-        </section>
-
-        <footer>
-            <div class="container-grid-3">
-                <div class="footer-info">
-                    <div class="logo"><span>Bonz</span><span>.Ai</span></div>
-                    <p>The hotel of the future, where sustainability meets smart technology.<br>Experience AI-driven hospitality with an eco-conscious heart. </p>
-                </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p>123 Green street, Eco City, EC 12345</p>
-                    <p>+1 (555) 123-4567</p>
-                    <p>hello@bonza.ai</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of service></a>
-                    <a href="#">Sustainablility Report</a>
-                </div>
-            </div>
-            <div class="copyright">
-                &copy; 2025 Bonz.Ai. All rights reserved.
+            <h2>Sustainablility by the Numbers</h2>
+            <p>Our commitment to the planet, measured and verified</p>
+        </div>
+ 
+        <div class="grid grid-4">
+            <div class="stat-card">
+                <img src="stat.icon/droplet.svg" alt="">
+                <h3>50%</h3>
+                <h3>Watar consumption</h3>
+                <p>Advanced water recycling and smart usage monitoring</p>
             </div>
             
-        </footer>
-    </body>
-    </html>    
+            <div class="stat-card">
+                <img src="stat.icon/battery.svg" alt="battery icon">
+                <h3>100%</h3>
+                <h3>Solar Powered</h3>
+                <p>All energy sourced from renewable solar panels</p>
+            </div>
+            <div class="stat-card">
+                <img src="stat.icon/wind.svg" alt="wind icon">
+                <h3>99.9%</h3>
+                <h3>Clean Air</h3>
+                <p>HEPA filtration and natural ventilation systems</p>    
+            </div>
+            
+            <div class="stat-card">
+                <img src="stat.icon/recycle.svg" alt="recycle icon">
+                <h3>95%</h3>
+                <h3>Zero Waste</h3>
+                <p>Comprehensive recycling and composting programs</p>
+            </div>  
+        </section>
+        
+        <section class="stay container">
+            <div class="stay-content">
+                <h2>Your AI-Enhanced Stay</h2>
+                <p>From the moment you arrive, our AI concierge learns your preferences and personalizes every aspect of your stay. Your room knows your ideal temperature, lighting, and even suggests local experiences based on your interests.</p>
+                <p>Voice-activated room controls<br>Adjust everything with simple voice commands</p>
+                <p>Predictive service 24/7<BR>AI anticipates your needs before you ask</p>
+                    <p>Smart recommendations<BR>Personalized dining and activity suggestions</p>
+                        <a href="#" class="btn btn-primary">Experience it yourself</a>
+                    </div>
+                    
+                    <div class="stay-image">
+                        <img src="hotel romm.jpg" alt="Hotel room">
+                    </div>
+                </section>
+   
+                <section class="final-cta">
+                    <div class="final-cta-content">
+                        <h2>Ready to Transform your stay?</h2>
+                        <p>Join us in creating a sustainable future without sacrificing luxury or comfort. Your perfect stay awaits.</p>
+                        <a href="#" class="btn btn-primary">Book Now</a>
+                    </div>
+                </section>
+                
+                <footer>
+                    <div class="container-grid-3">
+                        <div class="footer-info">
+                            <img src="footer.png" alt="logo">
+                            <p>The hotel of the future, where sustainability meets smart technology.<br>Experience AI-driven hospitality with an eco-conscious heart. </p>
+                        </div>
+                        
+                        <div class="footer-contact">
+                            <h4>Contact</h4>
+                            <p>123 Green street, Eco City, EC 12345</p>
+                            <p>+1 (555) 123-4567</p>
+                            <p>hello@bonza.ai</p>
+                        </div>
+                        
+                        <div class="footer-links">
+                            <h4>Quick Links</h4>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of service</a>
+                            <a href="#">Sustainablility Report</a>
+                            <a href="#">Careers</a>
+                        </div>
+                    </div>
+                    
+                    <div class="copyright">
+                        &copy; 2025 Bonz.ai. All rights reserved. Building a sustainable future, one stay at a time.
+                    </div>
+                </footer>
+                <script src="landing.js"></script>
+            </body>
+            </html>
