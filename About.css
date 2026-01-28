@@ -44,10 +44,10 @@ header {
 }
 
 .logo img {
-  width: 322px;
-  height: 78px;
-  top: 37px;
-  left: 100px;
+  width: 260px;
+  height: 62px;
+  top: auto;
+  left: auto;
 }
 
 .nav-links {
