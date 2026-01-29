@@ -150,6 +150,8 @@ body {
   font-size: 80px;
   font-weight: 400;
   margin: 1rem;
+  /* ---Varje puls tar 3 sekunder och loopar konstant--- */
+  animation: pulse-text 3s ease-in-out infinite;
 }
 
 .hero-subtitle {
@@ -577,6 +579,24 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /*-------------------------Effekter-------------------------*/
+
+@keyframes pulse-text {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 0 rgba(255, 215, 0, 0);
+  }
+  50% {
+    transform: scale(1.03);
+    text-shadow:
+      0 0 25px rgba(255, 215, 0, 0.6),
+      0 0 40px rgba(255, 215, 0, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    text-shadow: 0 0 0 rgba(255, 215, 0, 0);
+  }
+  /*--Pulsar ut "GuldGlowet" med 3% textstorleks ökning--*/
+}
 
 .booking-bar {
   position: relative;
