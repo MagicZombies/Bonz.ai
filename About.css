@@ -82,7 +82,6 @@ header {
   color: white;
 }
 
-
 .hamburger {
   display: none;
   flex-direction: column;
@@ -259,7 +258,6 @@ header {
   margin-top: 1rem;
 }
 
-
 /* MOBIL */
 @media (max-width: 576px) {
   .about-hero img {
@@ -322,12 +320,10 @@ header {
   list-style: none;
   margin: 0;
   padding: 0;
-
   width: 714px;
   height: 79px;
   background-color: #ECECF0;
   border-radius: 999px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -340,24 +336,21 @@ header {
   font-size: 24px;
   font-weight: 600;
   line-height: 1;
-
   width: 158px;
   height: 49px;
   border-radius: 999px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 0;
   background-color: transparent;
-  color: #000000; 
+  color: #000000;
   cursor: pointer;
   transition: all 0.2s ease;
   border: none;
 }
 
-/* AKTIV FLIK  */
+/* AKTIV FLIK */
 .tab.active {
   width: 230px;
   height: 59px;
@@ -372,7 +365,7 @@ header {
 /* INAKTIVA FLIKAR */
 .tab.disabled {
   background-color: transparent;
-  color: #000000; 
+  color: #000000;
   cursor: pointer;
 }
 
@@ -398,11 +391,11 @@ header {
     box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15);
     border: 1px solid #DDD;
   }
-  .tab.active {
-    width: 70%; 
-    margin: 0 auto; 
-}
 
+  .tab.active {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 /* AMENITIES */
@@ -419,7 +412,6 @@ header {
   align-items: center;
   gap: 3rem;
 }
-
 
 .amenities-title {
   font-family: Inter, sans-serif;
@@ -505,7 +497,7 @@ header {
   font-family: Inter, sans-serif;
 }
 
-/* MOBIL*/
+/* MOBIL */
 @media (max-width: 576px) {
   .amenities-section {
     padding: 3rem 1rem;
@@ -547,8 +539,8 @@ header {
     font-size: 14px;
   }
 }
- /* Contact */
-/* Sektionens bakgrund */
+
+/* Contact */
 .contact-section {
   width: 100%;
   background: #F9FAFB;
@@ -558,7 +550,6 @@ header {
   align-items: center;
 }
 
-/* Rubrik */
 .contact-section h2 {
   font-family: Inter, sans-serif;
   font-size: 48px;
@@ -568,7 +559,6 @@ header {
   margin-bottom: 1rem;
 }
 
-/* Undertext */
 .contact-subtitle {
   font-family: Inter, sans-serif;
   font-size: 32px;
@@ -579,7 +569,6 @@ header {
   margin-bottom: 3rem;
 }
 
-/* Vita boxen */
 .contact-box {
   width: 1239px;
   max-width: 100%;
@@ -590,21 +579,18 @@ header {
   box-sizing: border-box;
 }
 
-/* Formulär */
 #contactForm {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-/* Rader */
 .row {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
-/* Labels */
 label {
   flex: 1;
   font-family: Inter, sans-serif;
@@ -614,7 +600,6 @@ label {
   flex-direction: column;
 }
 
-/* Inputs */
 input,
 textarea {
   margin-top: 0.5rem;
@@ -629,13 +614,11 @@ textarea {
   box-sizing: border-box;
 }
 
-/* Textarea */
 textarea {
   height: 150px;
   resize: vertical;
 }
 
-/* Knapp */
 .send-message {
   width: 1132px;
   max-width: 100%;
@@ -655,7 +638,6 @@ textarea {
   background: #007f55;
 }
 
-/* Responsivitet */
 @media (max-width: 900px) {
   .row {
     flex-direction: column;
@@ -690,7 +672,6 @@ footer {
   font-family: Inter, sans-serif;
 }
 
-/* GRID LAYOUT — Figma desktop */
 .container-grid-3 {
   width: 1240px;
   max-width: 100%;
@@ -700,7 +681,6 @@ footer {
   gap: 60px;
 }
 
-/* LEFT COLUMN */
 .footer-info img {
   width: 166px;
   height: auto;
@@ -714,7 +694,6 @@ footer {
   color: #9ca3af;
 }
 
-/* COLUMN TITLES */
 footer h4 {
   font-size: 32px;
   font-weight: 400;
@@ -722,14 +701,12 @@ footer h4 {
   margin-bottom: 20px;
 }
 
-/* CONTACT TEXT */
 .footer-contact p {
   font-size: 16px;
   line-height: 100%;
   margin-bottom: 10px;
 }
 
-/* QUICK LINKS */
 .footer-links a {
   display: block;
   font-size: 16px;
@@ -742,7 +719,6 @@ footer h4 {
   color: #ffffff;
 }
 
-/* DIVIDER */
 .footer-divider {
   width: 1240px;
   max-width: 100%;
@@ -752,7 +728,6 @@ footer h4 {
   opacity: 0.2;
 }
 
-/* COPYRIGHT */
 copyright,
 .copyright {
   text-align: center;
@@ -763,7 +738,6 @@ copyright,
   margin: 0 auto;
 }
 
-/* RESPONSIVE — TABLET */
 @media (max-width: 1024px) {
   .container-grid-3 {
     grid-template-columns: 1fr 1fr;
@@ -779,7 +753,6 @@ copyright,
   }
 }
 
-/* RESPONSIVE — MOBILE */
 @media (max-width: 700px) {
   .container-grid-3 {
     grid-template-columns: 1fr;
@@ -811,10 +784,7 @@ copyright,
   }
 }
 
-
 /* Fixa brytningen vid 600 pixlar */
-/* pga fasta mått i figman var jag tvungen att lägga detta annars sprickar sidan */
-
 @media (max-width: 900px) {
   .amenities-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -885,6 +855,93 @@ copyright,
   }
 }
 
+/* ========================= */
+/* DESIGN ADD-ON (SAFE MODE) */
+/* ========================= */
 
+/* NAV-LÄNKAR */
+.nav-links a {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
 
+.nav-links a:hover {
+  transform: translateY(-3px) scale(1.06);
+  color: #009966;
+}
 
+/* BOOK BUTTON — FIXED */
+.book-button {
+  display: inline-block;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+}
+
+.book-button:hover {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0px 18px 18px rgba(0,0,0,0.25);
+  color: white;
+}
+
+/* SEND MESSAGE BUTTON */
+.send-message {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.send-message:hover {
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0px 12px 12px rgba(0,0,0,0.25);
+}
+
+/* AMENITY CARD */
+.amenity-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.amenity-card:hover {
+  transform: translateY(-8px) scale(1.06);
+  box-shadow: 0px 25px 35px rgba(0,0,0,0.18);
+}
+
+/* IMAGE POP */
+.img-wrapper img {
+  transition: transform 0.35s ease;
+}
+
+.amenity-card:hover .img-wrapper img {
+  transform: scale(1.08);
+}
+
+/* FIXAR RAMEN */
+.img-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.img-wrapper img {
+  position: relative;
+  z-index: 1;
+}
+
+/* TABS */
+.tab {
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.tab:not(.active):hover {
+  transform: scale(1.06);
+  background-color: #ffffff80;
+}
+
+/* FOOTER LINKS */
+.footer-links a {
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/* för att ingen annan text regel ska skrivas över */
+.nav-links .book-button:hover {
+  color: #ffffff !important; 
+}
