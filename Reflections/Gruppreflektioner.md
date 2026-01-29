@@ -17,7 +17,7 @@ Planering och genomförande
 
 Beskriv hur ni inom teamet planerade projektet initialt?
 
-Vi började med att fundera på vem som skulle ta vilken del av sidan. Sedan gick vi igenom kraven som fanns och började skapa våra User stories. Samt sedan bröt ner dessa i mindre task för att få en överblick av det vi skulle börja jobba på.
+Vi började med att fundera på vem som skulle ta vilken del av sidan. Sedan gick vi igenom kraven som fanns och började skapa våra User stories. Samt sedan bröt ner dessa i mindre task för att få en överblick av det vi skulle börja jobba på. Vi hade sprintmöten löpande och såg till så alla hade en bra uppfattning om veckans planering.
 
 Vilka steg har teamet tagit för att utveckla applikationen?
 
@@ -27,7 +27,7 @@ Teamets utmaningar och lösningar
 
 Vika var de största utmaningarna för teamet?
 
-En större utmaning för gruppen var att få in Javascript på sidorna och få det att funka som tänkt. Då användandet av Javascript var nytt för oss och något vi ej använt oss av sedan tidigare
+En större utmaning för gruppen var att få in Javascript på sidorna och få det att funka som tänkt. Då användandet av Javascript var nytt för oss och något vi ej använt oss av sedan tidigare. Vi fick se över våra User stories och planera om.
 
 Hur löste eller hanterade teamet dessa utmaningar?
 
