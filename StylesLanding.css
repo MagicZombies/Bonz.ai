@@ -1,5 +1,5 @@
 /* ============================================================
-   1. VARIABLER & BAS
+   1. GRUNDLÄGGANDE STILAR
    ============================================================ */
 :root {
   --primary-green: #00a86b;     
@@ -295,10 +295,12 @@ header .container {
    7. FOOTER
    ============================================================ */
 footer {
+  width: 100%;
   background-color: #101828;
   color: #9ca3af;
   padding: 80px 0 40px;
-  font-size: 15px;
+  /*font-size: 15px;*/
+  font-family: Inter, sans-serif;
 }
 
 .container-grid-3 {
@@ -309,15 +311,17 @@ footer {
 }
 
 .footer-info img {
-   height: 120px; 
-   margin-bottom: 15px; 
+   width: 166px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 30px;
 }
 
 footer h4 {
-   color: #ffffff;
-   font-size: 22px;
-   font-weight: 600; 
-   margin-bottom: 30px; 
+   font-size: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .footer-links {
@@ -336,7 +340,10 @@ footer h4 {
   margin-top: 80px;
   padding-top: 40px;
   border-top: 1px solid rgba(255,255,255,0.05);
+  font-size: 24px;
 }
+   
+ 
 
 /* ============================================================
    8. RESPONSIVITET (Fixad för mobilmeny)
