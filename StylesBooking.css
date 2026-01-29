@@ -12,7 +12,7 @@
   --color-purple-braincolor: #9810fa;
 }
 
-/*-----------------------------------------------NAV--------------------------------------------------- */
+/*---Peters---------------------------------------NAV--------------------------------------------------- */
 
 /* HEADER */
 header {
@@ -118,7 +118,39 @@ header {
   }
 }
 
-/*-----------------------------------------------NAV--------------------------------------------------- */
+/* NAV-LÄNKAR */
+.nav-links a {
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.nav-links a:hover {
+  transform: translateY(-3px) scale(1.06);
+  color: #009966;
+}
+
+/* för att ingen annan text regel ska skrivas över */
+.nav-links .book-button:hover {
+  color: #ffffff !important;
+}
+
+/* BOOK BUTTON — FIXED */
+.book-button {
+  display: inline-block;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    color 0.25s ease;
+}
+
+.book-button:hover {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0px 18px 18px rgba(0, 0, 0, 0.25);
+  color: white;
+}
+
+/*-----------------------------------------------NAV------------------------------------------------End--- */
 
 body {
   margin: 0;
@@ -679,7 +711,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/*------------------------------------------FOOTER--------------------------------------------- */
+/*--Peters----------------------------------------FOOTER--------------------------------------------- */
 
 /* FOOTER BASE */
 footer {
@@ -690,7 +722,6 @@ footer {
   font-family: Inter, sans-serif;
 }
 
-/* GRID LAYOUT — Figma desktop */
 .container-grid-3 {
   width: 1240px;
   max-width: 100%;
@@ -700,7 +731,6 @@ footer {
   gap: 60px;
 }
 
-/* LEFT COLUMN */
 .footer-info img {
   width: 166px;
   height: auto;
@@ -714,7 +744,6 @@ footer {
   color: #9ca3af;
 }
 
-/* COLUMN TITLES */
 footer h4 {
   font-size: 32px;
   font-weight: 400;
@@ -722,14 +751,12 @@ footer h4 {
   margin-bottom: 20px;
 }
 
-/* CONTACT TEXT */
 .footer-contact p {
   font-size: 16px;
   line-height: 100%;
   margin-bottom: 10px;
 }
 
-/* QUICK LINKS */
 .footer-links a {
   display: block;
   font-size: 16px;
@@ -742,7 +769,6 @@ footer h4 {
   color: #ffffff;
 }
 
-/* DIVIDER */
 .footer-divider {
   width: 1240px;
   max-width: 100%;
@@ -752,7 +778,6 @@ footer h4 {
   opacity: 0.2;
 }
 
-/* COPYRIGHT */
 copyright,
 .copyright {
   text-align: center;
@@ -763,7 +788,6 @@ copyright,
   margin: 0 auto;
 }
 
-/* RESPONSIVE — TABLET */
 @media (max-width: 1024px) {
   .container-grid-3 {
     grid-template-columns: 1fr 1fr;
@@ -779,7 +803,6 @@ copyright,
   }
 }
 
-/* RESPONSIVE — MOBILE */
 @media (max-width: 700px) {
   .container-grid-3 {
     grid-template-columns: 1fr;
@@ -811,4 +834,16 @@ copyright,
   }
 }
 
-/*------------------------------------------FOOTER--------------------------------------------- */
+/* FOOTER LINKS */
+.footer-links a {
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+/*------------------------------------------FOOTER-------------------------------------------End-- */
