@@ -33,6 +33,7 @@ header {
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .logo {
