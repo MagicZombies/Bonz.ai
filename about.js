@@ -7,13 +7,15 @@ hamburger.addEventListener("click", () => {
 
 });
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
     const fn = document.getElementById('firstName').value.trim();
     const em = document.getElementById('email').value.trim();
     const subject = document.getElementById('subject').value.trim();
     const msg = document.getElementById('userMessage').value.trim();
+
+    const form = document.getElementById('contactForm');
     const output = document.getElementById('formResponse');
 
     if (!fn || !em || !subject || !msg) {
@@ -21,10 +23,13 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         return;
     }
 
-    alert("Your message has been sent!");
+    form.style.display = "none";
 
-    output.innerHTML = `<strong>Thank you ${fn}!</strong><br>Your message has been received.`;
+    output.innerHTML = `
+        <strong>Tack ${fn}!</strong><br>
+        Ditt meddelande har skickats.
+    `;
     output.style.color = "#009966";
-
-    this.reset();
+    output.style.fontSize = "24px";
+    output.style.textAlign = "center";
 });
