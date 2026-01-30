@@ -1,0 +1,72 @@
+﻿Peter Gergawys indviduella reflektioner
+Vad var ditt mål med projektet initialt? 
+Mitt mål i början av projektet var egentligen ganska enkelt: jag ville förstå hur det agila arbetssättet funkar på riktigt när man jobbar i ett team och inte bara läser om det. Tidigare har vi jo övat lite men det är inte samma sak som att jobba i ett riktigt team med riktigt uppdrag.Samtidigt ville jag passa på att bli bättre på HTML och CSS, och även våga testa lite mer JavaScript än jag gjort tidigare. För mig handlade projektet både om att utvecklas tekniskt och att känna mig tryggare i hur man planerar och samarbetar tillsammans.
+Hur upplevde du inför arbetet att arbeta i team?
+I början var det faktiskt ganska stressigt, mest för att man måste lita på att andra gör sin del och att allt ska hänga ihop. Det kändes lite ovant att släppa kontrollen och låta andra ta ansvar för vissa uppgifter. Men efter ett tag började det flyta på bättre. Vi hade bra kommunikation, mycket tack vare våra sprint reviews som höll oss uppdaterade och på samma spår. Jag tycker att samarbetet blev starkare ju längre vi kom, och i slutändan löste vi saker på ett bra sätt tillsammans.
+Hur tycker du att planeringen inför projektet fungerade?
+Jag tycker att planeringen fungerade ganska bra överlag. Vi hade ändå övat lite innan, som med planning poker och andra agila övningar, så vi hade en okej uppfattning om hur processen skulle gå till. Samtidigt fanns det såklart lite osäkerhet i början, så första dagen gick nästan helt åt att bara få koll på hur vi skulle lägga upp allt. Vi började med att dela upp uppgifter och bestämma vem som skulle ta vilken del av projektet. Sen skrev vi user stories, gjorde tasks och satte story points. Efter det var det egentligen bara att plocka den uppgift som hade högst prio och börja jobba. Det blev en ganska tydlig struktur när vi väl kom igång.
+Vad har du bidragit med i planeringen, samt utvecklandet av applikationen?
+Jag bidrog ganska mycket i planeringen genom att vara aktiv i våra diskussioner och hjälpa till att dela upp arbetet på ett sätt som kändes rimligt för alla. Jag var med och skrev flera user stories och tasks, och jag hjälpte till när vi satte story points så att vi fick en bättre bild av hur mycket tid saker skulle ta.
+I själva utvecklingen jobbade jag mest med frontend‑delen. Jag ansvarade bland annat för navigationen och footern, vilket gjorde att jag verkligen kände att jag bidrog till helheten. Jag byggde upp strukturen i HTML och fixade mycket av designen i CSS, och försökte även hjälpa
+till där det behövdes när någon fastnade eller när något behövde justeras för att allt skulle funka tillsammans.
+
+
+
+
+Beskriv med dina egna ord, er applikation
+Vår applikation var egentligen en simulering av ett riktigt kunduppdrag där vi skulle bygga en hotellhemsida utifrån en bestämd Figma‑design och tydliga krav från “kunden”. Tanken var att vi skulle jobba så realistiskt som möjligt, alltså dela upp arbetet i gruppen, skriva user stories, tasks, hålla möten, påminna varandra och jobba agilt genom hela processen.
+Själva applikationen består av tre sidor: Home, About och Booking. Home är mer som en översikt där man får en första känsla för hotellet. About går djupare in på företaget och där finns även kontaktformulär. Booking‑sidan är där man kan göra själva bokningen.
+Jag hade ansvar för About‑sidan, så den delen kan jag lite extra väl. Men helheten handlar om att skapa en enkel, tydlig och fungerande hotellhemsida som följer kundens design och krav.
+Vilka var de största utmaningarna för dig?
+I början var det agila arbetssättet en liten utmaning för mig, mest för att man måste lita på varandra och ha bra kommunikation för att allt ska flyta. Det kändes lite ovant först, men efter ett tag märkte jag att det faktiskt fungerade riktigt bra när alla höll sig uppdaterade och vi hade våra möten och reviews.
+Men om jag ska vara helt ärlig så var den största utmaningen för mig ändå JavaScript. Vi hade ju gjort lite praktiska agila övningar innan, men JavaScript kom lite som en chock när vi fick reda på att vi skulle bli prövade på det mitt i projektet. Jag fick lösa mycket genom att googla, testa mig fram och försöka förstå hur allt hängde ihop. Det tog tid, men jag lärde mig mycket på vägen.
+Hur löste eller hanterade du dessa utmaningar?
+Jag hanterade utmaningarna genom att försöka ta det steg för steg istället för att stressa upp mig. När det gällde det agila arbetssättet så hjälpte det mycket att vi hade regelbundna möten och att alla faktiskt pratade med varandra. Det gjorde att tilliten växte ganska snabbt och att kommunikationen blev mycket bättre än i början.
+När det kommer till JavaScript delen, som var den största utmaningen för mig, så löste jag det mest genom att googla, testa mig fram och kolla olika exempel tills jag förstod hur saker fungerade. Det tog lite tid, men det gjorde också att jag lärde mig mer än jag trodde att jag skulle. Jag försökte också fråga gruppen när jag fastnade, och det hjälpte att vi kunde bolla idéer och lösningar med varandra.
+
+
+
+
+
+
+Vilka kompromisser inom teamet har du fått göra under projektets gång
+En kompromiss jag fick göra var att ta på mig navigationen och nästan hela footern. Jag kände att de andra hade lite mer att göra just då, så jag tog det för teamet utan att göra nån grej av det. Sen fick jag även ta kontakt formuläret, och det var faktiskt lite jobbigare än jag trodde först. Men det är ingen fara, jag tänkte att det är bättre att jag gör det än att nån annan blir överbelastad. Ibland får man bara steppa upp litee för att helheten ska funka bra.
+Vad har du lärt dig under projektets gång
+Jag har lärt mig hur viktigt det är med tydlig kommunikation i gruppen och att man håller varandra uppdaterade så allt flyter bättre. Sen har jag utvecklat mina kunskaper i html och css mycket mer än jag trodde. Jag har blivit tryggare i att bygga upp strukturen, fixa designen och få allt att se mer enheltigt ut. Det känns som jag fått en bättre förståelse för hur man jobbar mer på riktigt och hur allt hänger ihop när man gör ett större projekt tillsammans.
+Vad hade du gjort annorlunda om du fick göra om projektet
+Om jag hade gjort om projektet hade jag inte följt figmans mått så strikt. Alla exakta pixelvärden, fontstorlekar och avstånd gjorde att det kändes onödigt låst och inte så naturligt att jobba med. Jag hade hellre anpassat måtten mer fritt så layouten kunde flyta bättre och kännas mer rimlig i praktiken. Det hade gjort arbetet både smidigare och mer flexibelt.
+
+
+Vilka möjligheter ser du med de kunskaper du fått under arbetet med projektet?
+Jag ser ganska många möjligheter med det jag lärt mig under projektet. Framför allt känner jag att jag blivit mycket tryggare i att jobba i ett team och förstå hur ett projekt faktiskt rör sig framåt när man arbetar agilt. Det gör att jag känner mig mer förberedd inför framtida grupparbeten och även riktiga projekt ute i arbetslivet.
+Jag har också utvecklat mina kunskaper i HTML och CSS på ett sätt som gör att jag kan bygga upp sidor mer självständigt och få dem att se mer professionella ut. Dessutom har jag förstått att vi kommer jobba mycket agilt framöver, så det här projektet blev en väldigt bra introduktion till hur processen fungerar i praktiken och vilket ansvar man faktiskt har i ett team.
+Allt detta gör att jag känner att jag kan ta större ansvar i framtida projekt och bidra mer både tekniskt och i samarbetet.
+
+
+
+
+
+
+Beskriv minst tre fördelar och motivera varför de är viktiga. Använd exempel från ert projekt för att styrka dina argument.
+Jag tycker att frågan är ganska otydlig, så jag får gissa att den handlar om fördelarna med det agila arbetssättet och hur det påverkade vårt projekt. En stor fördel var att vi jobbade agilt eftersom det gjorde att vi hela tiden hade koll på vad alla gjorde och kunde justera arbetet snabbt om något ändrades. Till exempel hjälpte våra sprint reviews oss att upptäcka saker som behövde fixas innan de blev större problem.
+En annan fördel var att vi hade tydliga roller och uppgifter. Det gjorde att alla visste vad de skulle fokusera på och att arbetet inte krockade. När jag jobbade med mina delar av frontenden kunde jag göra det utan att störa någon annan, eftersom vi redan hade delat upp allt i user stories och tasks.
+En tredje fördel var att vi följde en färdig design i Figma. Även om jag inte alltid höll med om alla mått så gav det oss en tydlig riktning att följa. Det gjorde att vi slapp lägga tid på att hitta på en egen design och istället kunde fokusera på att bygga själva applikationen
+Beskriv en konkret lösning du föreslagit. Varför ansåg du att den var bäst? Jämför med minst en annan möjlig lösning och förklara varför du inte valde den.
+En konkret lösning jag föreslog under projektet var att vi skulle hålla en tydlig uppdelning av våra tasks och låta varje person ansvara för sina delar fullt ut. Jag tyckte det var den bästa lösningen eftersom det gav oss bättre struktur och gjorde det lättare att undvika att skriva över varandras kod eller råka jobba på samma sak samtidigt. Det gjorde också att alla kunde fokusera på sitt område och jobba mer effektivt.
+Ett annat alternativ hade varit att vi lät alla hoppa in lite överallt och ta det som behövde göras för stunden. Det hade kanske gett mer flexibilitet, men jag valde bort det eftersom det lätt hade blivit rörigt och svårt att hålla koll på vad som var gjort och vad som återstod. Med den lösning vi valde blev arbetet mer organiserat och vi kunde hålla en tydligare överblick över projektet.
+
+
+Ge minst två exempel på lösningar ni valde bort. Analysera varför ni avstod från dem. Hur påverkade det projektet? Kunde något ha gjorts annorlunda?
+En lösning vi valde bort var att bygga fler funktioner än vad som stod i kraven. Vi pratade lite om att lägga till extra saker för att göra sidan mer avancerad, men vi insåg snabbt att det bara skulle ta tid från det som faktiskt behövde göras. Därför valde vi att hålla oss strikt till kravlistan. Det gjorde projektet mer fokuserat och minskade risken att vi skulle fastna i onödiga sidospår.
+En annan lösning vi valde bort var att ändra för mycket i designen från Figma. Även om vissa delar kändes lite överdrivna i måtten, och jag personligen inte hade valt att göra allt exakt så, så bestämde vi oss ändå för att följa designen så nära som möjligt. Det gjorde att vi slapp diskussioner om hur saker “borde” se ut och istället kunde lägga tiden på att faktiskt bygga klart applikationen.
+I efterhand hade vi kanske kunnat diskutera vissa delar av designen mer, särskilt när det gäller mått och spacing, men samtidigt gjorde beslutet att följa Figma att projektet blev mer strukturerat och lättare att genomföra.
+
+
+Reflektera kring hur den kod du bidragit med skulle kunna förbättras, ge konkreta exempel.
+Jag tycker att den här frågan är ganska otydlig, så jag gissar att den handlar om min egen kod och därför fokuserar jag på About‑sidan som jag ansvarade för. Det finns flera saker där som jag vet att jag hade kunnat göra bättre.
+Det största handlar om min CSS. Jag hade kunnat skriva den mycket renare och mer strukturerad. Framför allt när det gäller responsiviteten. I efterhand ser jag att jag borde ha använt flex och grid betydligt mer för att lösa layouten på mindre skärmar. Det hade gjort koden både enklare, tydligare och mer skalbar.
+Istället fastnade jag i media queries. Det var nytt och spännande, och när jag väl började experimentera med det så fortsatte jag bara. Det fungerade, men det gjorde också att koden blev onödigt tung och mindre flexibel. Jag märkte det extra tydligt eftersom vi tidigare hade gjort inlämningen Poster Shop, där min CSS faktiskt blev mycket renare och mer genomtänkt. När jag jämför de två uppgifterna ser jag väldigt konkret hur stor skillnad det gör när man bygger layouten med flex och grid från början.
+Varför jag inte löste det bättre direkt i projektet? Om jag ska vara helt ärlig så var det en kombination av ren lathet och att jag tyckte det var kul att testa media queries. Men nu när jag ser skillnaden vet jag exakt hur jag skulle gjort det bättre nästa gång.
+Om ni hade en vecka till på er, vad skulle du ändrat? Fokusera på arbetsprocessen, samarbetet eller verktygen ni använde. Hur skulle det ha påverkat resultatet?
+Om vi hade haft en vecka till hade jag framför allt ägnat mer tid åt att gå igenom vår kod och förbättra strukturen. Det fanns flera delar som hade kunnat bli renare och mer organiserade om vi bara haft lite mer tid att städa upp och tänka igenom helheten. Jag hade också velat planera in fler visuella effekter och små detaljer som hade gjort sidan lite roligare och mer levande.
+Med extra tid hade vi kunnat finslipa både designen och koden på ett sätt som hade gjort slutresultatet mer professionellt. Jag tror att sidan hade känts mer genomarbetad, både i hur den såg ut och hur den var uppbyggd bakom kulisserna.
