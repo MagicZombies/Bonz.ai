@@ -100,7 +100,7 @@ body {
 /* ============================================================
    3. HEADER & NAVIGATION
    ============================================================ */
-header {
+body > header {
   background: var(--white);
   padding: 1.2rem 0;
   position: sticky;
@@ -244,94 +244,103 @@ header .container {
 /* ============================================================
    5. VISION & STATS
    ============================================================ */
-.vision {
-  padding: 80px 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column; 
-  align-items: center;   
-}
-
-.vision p {
-  max-width: 700px;       
-  margin: 0 auto;
-}
-
-.card-grid, .grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 25px;
-  margin-top: 50px;
-}
-
-.card, .stat-card {
-  padding: 40px 25px;
-  border: 1px solid #686868;
-  border-radius: 12px;
-  text-align: left;
-  background: var(--white);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow);
-}
-
-.card .icon, .stat-card .icon-circle {
-  background-color: #88DC84;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
-}
-
-.stats.section {
-  background-color: var(--bg-mint);
-  padding: 100px 0;
-  text-align: center;
-}
-
-.stats.section .container {
-  display: flex;
-  flex-direction: column; 
-  align-items: center;   
-  text-align: center;     
-  justify-content: center;
-}
 
 
-.stats.section h2 {
-  width: 100%;
-  margin-bottom: 10px;
-}
+   .vision {
+     padding: 80px 0;
+    }
+     
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      width: 100%;
+      background: transparent;
+      
+    }
 
+    .section-title h2  {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+     }
 
-.stats.section p {
-  width: 100%;
-  max-width: 600px; 
-  margin-bottom: 40px;
-}
-.stat-card { 
-  text-align: center; 
-}
-.stat-card h3:first-of-type {
-  color: var(--primary-green);
-  font-size: 2.8rem;
-  font-weight: 800;
-}
+     .section-title p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 700px;
+      text-align: center;
+     }
+
+    .card-grid, .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 25px;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .card, .stat-card {
+      padding: 40px 25px;
+      border: 1px solid #686868;
+      border-radius: 12px;
+      text-align: left;
+      background: var(--white);
+      transition: transform 0.3s ease;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+    }
+    
+    .card .icon {
+      background-color: #88DC84;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+    }
+    
+    .stats.section {
+      background-color: var(--bg-mint);
+      padding: 100px 0;
+    }
+    .stats.section .container {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;   
+      text-align: center;     
+    }
+    
+    
+    .stats-card {
+      text-align: center;
+      border: none;
+    }
+    
+    .stats.section p {
+      width: 100%;
+      max-width: 600px; 
+      margin-bottom: 40px;
+    }
+    
+    .stat-card h3:first-of-type {
+      color: var(--primary-green);
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
 
 /* ============================================================
    6. AI STAY & FINAL CTA
    ============================================================ */
-.stay {
+.stay-layout {
   display: flex;
   align-items: center;
   gap: 80px;
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .stay-content, .stay-image {
@@ -346,11 +355,15 @@ header .container {
 
 .final-cta {
   background: linear-gradient(to right, #009966CC 80%, #009688);
-  padding: 100px 0;
+  padding: 120px 0;
   text-align: center;
   color: white;
 }
 
+.final-cta-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
 .final-cta h2 { 
   color: white; 
   margin-bottom: 20px;
@@ -436,6 +449,10 @@ footer h4 {
 
 .footer-links a:hover {
   color: #ffffff;
+}
+
+address {
+  font-style: normal;
 }
 
 /* DIVIDER */
